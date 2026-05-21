@@ -40,6 +40,8 @@
 
     trackball: trackball@0 {
         status = "okay";
+        swap-xy;                                /**< If moving your ball Up causes the cursor to move Right */
+        invert-y;                               /**< If moving your ball Up causes the cursor to move Right */
         compatible = "pixart,pmw3610-alt";
         reg = <0>;
         spi-max-frequency = <2000000>;
