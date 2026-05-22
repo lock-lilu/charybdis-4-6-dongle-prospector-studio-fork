@@ -13,16 +13,6 @@
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
 #define THUMBS 30 31 32 33 34 35
 
-/ {    
-    tb_scroll_profile {
-        compatible = "zmk,input-processor-transform";
-        #input-processor-cells = <0>;
-        type = <INPUT_REL_X>, <INPUT_REL_Y>;
-        to-type = <INPUT_REL_HWHEEL>, <INPUT_REL_VWHEEL>;
-        // config = <INPUT_PROCESSOR_INVERT_Y>; 
-    };
-};
-
 
 &sk {
     release-after-ms = <600>;
@@ -42,6 +32,17 @@
 &caps_word { /delete-property/ ignore-modifiers; };
 
 / {
+
+    / {
+    tb_scroll_profile {
+        compatible = "zmk,input-processor-transform";
+        #input-processor-cells = <0>;
+        type = <INPUT_REL_X>, <INPUT_REL_Y>;
+        to-type = <INPUT_REL_HWHEEL>, <INPUT_REL_VWHEEL>;
+        // config = <INPUT_PROCESSOR_INVERT_Y>; 
+    };
+    };
+
     behaviors {
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
