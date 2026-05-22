@@ -30,7 +30,7 @@ layers:
   - {t: S, h: Ctl+ X}
   - {t: D, h: Ctl+ C}
   - {t: F, h: Ctl+ V}
-  - G
+  - {t: G, h: Ctl+ LSHFT}
   - H
   - J
   - K
