@@ -185,7 +185,7 @@
                             &mkp MB1   &mkp MB2   &mkp MB3    &trans  &trans
                                        &trans     &trans      &trans
             >;
-        input-processors = <&tb_scroll_profile>    
+        input-processors = <&tb_scroll_profile>;    
         };
 
         Sym {
