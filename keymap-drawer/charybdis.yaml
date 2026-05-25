@@ -58,44 +58,44 @@ layers:
   - Symbol
   - BSPC
   Mouse:
+  - DEV TOOLS
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - {t: ▽, type: trans}
+  - SCROLLLOCK
+  - PAUSE BREAK
+  - VOLUME DOWN
+  - VOLUME UP
+  - PG UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LGUI
+  - PRINT SCREEN
+  - INSERT
   - LALT
   - LSHFT
   - LCTRL
-  - {t: ▽, type: trans}
+  - PG DN
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LGUI
+  - DEL
   - {t: ▽, type: trans}
   - Number
   - Symbol
