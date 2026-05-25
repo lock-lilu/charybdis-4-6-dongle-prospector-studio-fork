@@ -26,7 +26,7 @@ layers:
   - P
   - '['
   - ESC
-  - A
+  - {t: A, h: Gui+ X}
   - {t: S, h: Ctl+ X}
   - {t: D, h: Ctl+ C}
   - {t: F, h: Ctl+ V}
