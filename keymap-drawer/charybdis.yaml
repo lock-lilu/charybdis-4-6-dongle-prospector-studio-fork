@@ -18,7 +18,7 @@ layers:
   - W
   - E
   - R
-  - T
+  - {t: T, h: Sft+ DEL}
   - Y
   - U
   - I
