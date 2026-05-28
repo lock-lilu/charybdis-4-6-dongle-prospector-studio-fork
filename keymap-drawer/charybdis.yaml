@@ -130,8 +130,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
+  - {t: '-', h: +}
+  - {t: (, h: )}
   - {t: '{', h: '}'}
   - '7'
   - '8'
@@ -141,9 +141,9 @@ layers:
   - F1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: '[', h: ']'}
   - '4'
   - '5'
