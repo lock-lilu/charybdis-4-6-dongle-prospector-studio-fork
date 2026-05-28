@@ -32,8 +32,8 @@ layers:
   - {t: F, h: Ctl+ V}
   - {t: G, h: Ctl+ LSHFT}
   - H
-  - J
-  - K
+  - {t: J, h: Ctl+ S}
+  - {t: K, h: Ctl+ F}
   - L
   - ;
   - ''''
