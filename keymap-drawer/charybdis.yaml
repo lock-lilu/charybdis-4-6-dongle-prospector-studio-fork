@@ -76,10 +76,10 @@ layers:
   - VOLUME DOWN
   - VOLUME UP
   - PG UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+ F
+  - Ctl+ X
+  - Ctl+ S
+  - Ctl+ P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PRINT SCREEN
@@ -88,7 +88,7 @@ layers:
   - LSHFT
   - LCTRL
   - PG DN
-  - {t: ▽, type: trans}
+  - HOME
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'

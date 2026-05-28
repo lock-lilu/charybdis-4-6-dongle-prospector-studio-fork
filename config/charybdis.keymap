@@ -168,11 +168,11 @@
             label = "Mouse";
             display-name = "Mouse";
             bindings = <
-&kp F12          &kp F1          &kp F2           &kp F3             &kp F4           &kp F5       &kp F6  &kp F7    &kp F8    &kp F9    &kp F10  &kp F11
-&trans           &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PG_UP    &trans  &trans    &trans    &trans    &trans   &trans
-&kp PRINTSCREEN  &kp INSERT      &kp LALT         &kp LSHFT          &kp LCTRL        &kp PG_DN    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans   &trans
-&kp LGUI         &kp DEL         &trans           &mo 3              &mo 2            &trans       &trans  &trans    &trans    &trans    &trans   &trans
-                                                  &mkp MB1           &mkp MB2         &mkp MB3     &trans  &trans
+&kp F12          &kp F1          &kp F2           &kp F3             &kp F4           &kp F5       &kp F6     &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
+&trans           &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PG_UP    &kp LC(F)  &kp LC(X)  &kp LC(S)  &kp LC(P)  &trans   &trans
+&kp PRINTSCREEN  &kp INSERT      &kp LALT         &kp LSHFT          &kp LCTRL        &kp PG_DN    &kp HOME   &mkp MB1   &mkp MB2   &mkp MB3   &trans   &trans
+&kp LGUI         &kp DEL         &trans           &mo 3              &mo 2            &trans       &trans     &trans     &trans     &trans     &trans   &trans
+                                                  &mkp MB1           &mkp MB2         &mkp MB3     &trans     &trans
                                                                      &trans           &trans       &trans
             >;
         };
