@@ -155,10 +155,10 @@
             label = "Base";
             display-name = "Base";
             bindings = <
-&kp ESC    &mt F1 N1    &mt F2 N2    &mt F3 N3    &mt F4 N4     &mt F5 N5          &mt F6 N6  &mt F7 N7  &mt F8 N8  &mt F9 N9  &mt F11 N0  &mt F12 DEL
-&kp TAB    &kp Q        &kp W        &kp E        &kp R         &mt LS(DEL) T      &kp Y      &kp U      &kp I      &kp O      &kp P       &kp LEFT_BRACKET
-&kp ESC    &mt LG(X) A  &mt LC(X) S  &mt LC(C) D  &mt LC(V) F   &mt LC(LSHFT) G    &kp H      &kp J      &kp K      &kp L      &kp SEMI    &kp APOS
-&kp LSHFT  &kp Z        &kp X        &kp C        &kp V         &kp B              &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH    &kp RIGHT_BRACKET
+&kp ESC    &mt F1 N1    &mt F2 N2    &mt F3 N3    &mt F4 N4     &mt F5 N5          &mt F6 N6  &mt F7 N7    &mt F8 N8    &mt F9 N9  &mt F11 N0  &mt F12 DEL
+&kp TAB    &kp Q        &kp W        &kp E        &kp R         &mt LS(DEL) T      &kp Y      &kp U        &kp I        &kp O      &kp P       &kp LEFT_BRACKET
+&kp ESC    &mt LG(X) A  &mt LC(X) S  &mt LC(C) D  &mt LC(V) F   &mt LC(LSHFT) G    &kp H      &mt LC(S) J  &mt LC(F) K  &kp L      &kp SEMI    &kp APOS
+&kp LSHFT  &kp Z        &kp X        &kp C        &kp V         &kp B              &kp N      &kp M        &kp COMMA    &kp DOT    &kp FSLH    &kp RIGHT_BRACKET
                                      &mo 1        &kp RET       &kp LEFT_GUI       &kp LCTRL  &kp SPACE
                                                   &kp LEFT_ALT  &mo 2              &kp BSPC
             >;
