@@ -18,6 +18,8 @@
 #
 ---
 include:
+  - board: nrf52840dongle_nrf52840
+    shield: onekey_dongle
   - board: nice_nano/nrf52840/zmk
     shield: charybdis_dongle
     snippet: studio-rpc-usb-uart
