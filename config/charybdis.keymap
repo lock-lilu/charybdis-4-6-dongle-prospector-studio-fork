@@ -168,12 +168,12 @@
             label = "Mouse";
             display-name = "Mouse";
             bindings = <
-&kp F12          &kp F1          &kp F2           &kp F3             &kp F4           &kp F5       &kp F6     &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
-&trans           &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PG_UP    &kp LC(F)  &kp LC(X)  &kp LC(S)  &kp LC(P)  &trans   &trans
-&kp PRINTSCREEN  &kp INSERT      &kp LALT         &kp LSHFT          &kp LCTRL        &kp PG_DN    &kp HOME   &mkp MB1   &mkp MB2   &mkp MB3   &trans   &trans
-&kp LGUI         &kp DEL         &trans           &mo 3              &mo 2            &trans       &trans     &trans     &trans     &trans     &trans   &trans
-                                                  &mkp MB1           &mkp MB2         &mkp MB3     &trans     &trans
-                                                                     &trans           &trans       &trans
+&kp F12          &kp F1          &kp F2           &kp F3    &kp F4     &kp F5       &kp F6     &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
+&trans           &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp UP    &kp EQUAL  &kp PG_UP    &kp LC(F)  &kp LC(S)  &kp LC(X)  &kp LC(P)  &trans   &trans
+&kp PRINTSCREEN  &kp INSERT      &kp LEFT         &kp DOWN  &kp RIGHT  &kp PG_DN    &kp HOME   &mkp MB1   &mkp MB2   &mkp MB3   &trans   &trans
+&kp LGUI         &kp DEL         &trans           &mo 3     &mo 2      &trans       &trans     &trans     &trans     &trans     &trans   &trans
+                                                  &mkp MB1  &mkp MB2   &mkp MB3     &trans     &trans
+                                                            &trans     &trans       &trans
             >;
         };
 
@@ -181,12 +181,12 @@
             label = "Symbol";
             display-name = "Symbol";
             bindings = <
-&trans        &trans  &trans    &trans     &sys_reset  &bootloader    &trans  &trans  &trans  &trans   &trans    &trans
-&trans        &trans  &trans    &kp UP     &trans      &trans         &kp N7  &kp N8  &kp N9  &kp N0   &kp HOME  &kp F1
-&trans        &trans  &kp LEFT  &kp RIGHT  &kp RIGHT   &trans         &kp N4  &kp N5  &kp N6  &none    &trans    &kp F10
-&kp LEFT_ALT  &trans  &trans    &kp DOWN   &kp MINUS   &kp PLUS       &kp N1  &kp N2  &kp N3  &kp DOT  &trans    &kp F20
-                                &trans     &trans      &trans         &trans  &trans
-                                           &trans      &trans         &trans
+&trans        &trans  &trans    &trans             &sys_reset       &bootloader      &trans  &trans  &trans  &trans   &trans    &trans
+&trans        &trans  &trans    &kp UP             &trans           &mt RBRC LBRC    &kp N7  &kp N8  &kp N9  &kp N0   &kp HOME  &kp F1
+&trans        &trans  &kp LEFT  &kp DOWN           &kp RIGHT        &mt RBKT LBKT    &kp N4  &kp N5  &kp N6  &none    &trans    &kp F10
+&kp LEFT_ALT  &trans  &trans    &trans             &kp MINUS        &kp PLUS         &kp N1  &kp N2  &kp N3  &kp DOT  &trans    &kp F20
+                                &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans           &trans  &trans
+                                                   &trans           &trans           &trans
             >;
         };
 
