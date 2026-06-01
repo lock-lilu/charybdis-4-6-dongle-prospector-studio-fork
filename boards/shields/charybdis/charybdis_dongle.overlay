@@ -2,12 +2,11 @@
 #include "split_input_common.dtsi"
 #include <dt-bindings/pinctrl/nrf-pinctrl.h>
 
-/* Обращаемся к существующему контроллеру пинов платы nice_nano */
 &pinctrl {
     i2c1_default: i2c1_default {
         group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,  /* SDA на P0.17 (D2) */
-                    <NRF_PSEL(TWIM_SCL, 0, 20)>;  /* SCL на P0.20 (D3) */
+            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,  /* SDA на D2 */
+                    <NRF_PSEL(TWIM_SCL, 0, 20)>;  /* SCL на D3 */
             bias-pull-up;
         };
     };
@@ -19,12 +18,6 @@
             low-power-enable;
         };
     };
-};
-
-&i2c1 {
-    pinctrl-0 = <&i2c1_default>;
-    pinctrl-1 = <&i2c1_sleep>;
-    pinctrl-names = "default", "sleep";
 };
 
 / {
@@ -40,28 +33,13 @@
     };
 };
 
-/ {
-    chosen {
-        zephyr,display = &oled;
-    };
-};
-
 &i2c1 {
     status = "okay";
+    pinctrl-0 = <&i2c1_default>;
+    pinctrl-1 = <&i2c1_sleep>;
+    pinctrl-names = "default", "sleep";
 
     oled: ssd1306@3c {
-        compatible = "sinowealth,sh1106";
-        reg = <0x3c>;
-        width = <128>;
-        height = <64>;
-        segment-offset = <2>;   
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <63>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        prechargep = <0x22>;
-        inversion-on;         
+        inversion-on;
     };
 };
