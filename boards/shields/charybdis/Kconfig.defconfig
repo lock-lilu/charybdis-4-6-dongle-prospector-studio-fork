@@ -14,3 +14,14 @@ config ZMK_SPLIT
 	default y
 	
 endif
+
+if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT || SHIELD_CHARYBDIS_DONGLE
+
+config ZMK_DISPLAY
+    default y
+
+config SSD1306
+    default y
+    depends on ZMK_DISPLAY
+
+endif
