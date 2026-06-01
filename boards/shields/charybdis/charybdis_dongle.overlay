@@ -35,9 +35,13 @@
 };
 
 
+&pro_micro_i2c {
+    /delete-node/ ssd1306@3c;
+};
+
 / {
     chosen {
-        zephyr,display = &oled;
+        zephyr,display = &oled_dongle;
     };
 };
 
@@ -47,12 +51,12 @@
     pinctrl-1 = <&i2c1_sleep>;
     pinctrl-names = "default", "sleep";
 
-    oled: ssd1306@3c {
+    oled_dongle: ssd1306@3c {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
-        segment-offset = <2>;  
+        segment-offset = <2>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
@@ -60,6 +64,6 @@
         com-invdir;
         com-sequential;
         prechargep = <0x22>;
-        inversion-on;         
+        inversion-on; 
     };
 };
