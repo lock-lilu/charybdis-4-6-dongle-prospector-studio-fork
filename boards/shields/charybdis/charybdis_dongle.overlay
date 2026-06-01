@@ -2,6 +2,7 @@
 #include "split_input_common.dtsi"
 #include <dt-bindings/pinctrl/nrf-pinctrl.h>
 
+
 &pinctrl {
     i2c1_default: i2c1_default {
         group1 {
@@ -33,6 +34,13 @@
     };
 };
 
+
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
+};
+
 &i2c1 {
     status = "okay";
     pinctrl-0 = <&i2c1_default>;
@@ -40,6 +48,18 @@
     pinctrl-names = "default", "sleep";
 
     oled: ssd1306@3c {
-        inversion-on;
+        compatible = "sinowealth,sh1106";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <2>;  
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <63>;
+        segment-remap;
+        com-invdir;
+        com-sequential;
+        prechargep = <0x22>;
+        inversion-on;         
     };
 };
